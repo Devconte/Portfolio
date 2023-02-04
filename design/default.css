@@ -1,0 +1,333 @@
+/* fonts 
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'RocknRoll One', sans-serif;
+*/
+html{
+    background-color: #242426;
+    
+}
+
+#logo {
+    margin: 10px 0 15px 0;
+    width: 100px;
+}
+
+.logobox{
+    display:flex;
+    justify-content: center;
+}
+header{
+    text-align: center;
+    color: white;
+    background-color: #303841;
+    margin: 0;
+    padding-top: 200px;
+    padding-bottom:  150px;
+}
+body{
+    padding:0;
+    margin:0;
+  
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+ 
+
+
+section{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+h1 {
+    font-family:'RocknRoll One', sans-serif;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+h3:before{
+    content:"- ";
+    color:grey
+}
+h3:after{
+    content:" -";
+    color:grey
+}
+h3{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+}
+
+
+
+footer {
+    background: #BE3144;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+.job {
+    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+
+}
+
+/* lien et listes */
+a:active{
+    color: blue;
+}
+a { /* refere a tout les lien sur la page */
+    text-decoration:none;
+    color:black
+}
+
+ul{
+    padding:0;
+    display:inline;
+}
+li:hover { 
+    font-weight: bold; /* en gras au passage souris*/
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    margin:10px;
+    
+}
+
+
+
+
+
+/* nav */
+
+.nav {
+    width: 100%;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5); 
+    font-size: 1.1em;
+    background-color:#BE3144;
+    padding: 20px;
+    display:flex;
+    justify-content: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    position:fixed;
+
+    
+    
+
+} 
+.nav a {
+    color:white;
+}
+
+
+    
+
+
+
+/* .separator{
+    width: 40px;
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom:15px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    background-color: #999999;
+} */
+
+
+
+/* projet */
+.contener{
+    width:80%;
+    margin:auto;
+    
+}
+
+
+
+.projet{
+    width: 400px;
+    margin: 30px;
+    display:inline-block;
+    background:white;
+    padding-bottom: 15px;
+    border: 0px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 6px; 
+    color:red;
+
+}
+
+
+.projet:hover{ /* permet de mettre une ombre quand on passe souris sur projet */
+    box-shadow: 0 14px 28px; /*rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+    color:red;
+    transition:0.5s /* 0.5 sec après la souris est passé affiche lombre */
+}
+.projet img { /* On vise ici les img au sein du projet et leur mettre une hauteur ainsi qu'une largeur max*/
+    min-width: 400px;
+    height: 266px;
+    object-fit: cover;
+    
+
+}
+
+
+.projet span{ 
+    text-transform: uppercase;
+    display: block;
+}
+
+
+.titre-projet {
+     font-family: 'Playfair Display', serif;
+     font-size: 1.4rem;
+}
+
+.desc-project{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+/*Contact */
+
+.contactheader{
+    padding-bottom: 10rem;
+    font-family: 'RocknRoll One', sans-serif;
+    color:white;
+    
+}
+
+.contactheader h2 {   
+    font-size: 2.7rem;
+}
+
+.contactheader p {
+    font-size: 1.25rem;
+}
+/* ID */
+
+
+
+
+#projets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#contact {
+    padding-top: 100px;
+    
+    background-color: #303841; 
+}
+#contact-links  {
+    display:flex;  
+    justify-content: center;
+    padding-bottom: 10rem;
+   
+}    
+#contact a{
+    color:white;
+    margin: 20px 20px 0 30px;
+    font-size: 1em;
+    
+}
+
+#contact span {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+@media all and (max-width: 1000px) {
+    .projet { width:100%; margin:15px }
+    .projet img { width:100%;min-width:auto; }
+    .projet .picture {width:100%; height:auto}
+    header h2 {width:90%}
+    #contact-links{ display: flex;
+    flex-direction: column;
+    }
+    .clinks{
+        padding-bottom: 40px;
+    }
+    
+}
+
+/* width: px ou % -> largeur
+height: px ou % -> hauteur */
+
+/* marge interne : padding, padding-right/left/top/bottom
+marge externe : margin, margin-right/left/top/bottom  */
+
+/* 
+Positionnement Relatif -> décaler l'élement par rapport à sa position de base -> position:relative
+Absolu -> décaler à n'importer quel endroit -> position: absolute
+Fixe -> a un endroit fixe tout le temps -> position: fixed
+*/
+
+/* position texte 
+overflow : hidden (cache le texte en trop)
+overflow : visible (affiche le texte même si dépasse)
+overflow: scroll (met barre de défilement)
+overflow : auto (automatique)
+
+propriété additionelle : 
+word-wrap: break-word => respecte les largeurs des box
+
+rajouter du contenu: 
+on utilise content pour définir un contenu
+pour faire contenu avant :
+
+transformer le texte en majuscule :
+text-transform: uppercase(majuscule), lowercase (minuscule), initial (premiere lettre maj et reste minuscule
+
+/* Commandes flexbox 
+#conteneur { 
+    display:flex
+    flex-direction: colum / colum-reverse (met les elements en colonnes)
+    flex-wrap: no-wrap / wrap / wrap-reverse (retour à la ligne ou non, a l'envers)
+    justify-content : flex-start (par défaut), flex-end (a la fin), center(au centre), space-between(espace entre), space-around(espace entre chaque coin de bloc)
+    height 700px; ( a mettre avant pour utiliser align en dessous)
+    align-items:center (met les elements au centre) / align-self: flex-end/start / stretch / baseline / center
+
+.element{
+    width: 400px;
+    height: 200px;
+
+.element:nth-child() -> permet de selectionner un element specifique pour le faire bouger
+ex :
+.projet:nth-child(3){
+    align-items: center -> on va aligner le projet n°3 au centre
+}
+*/
+

@@ -103,7 +103,7 @@ ul{
     display:inline;
 }
 li:hover { 
-    font-weight: bold; /* en gras au passage souris*/
+    font-weight: bold; /
 }
 
 li{
@@ -144,16 +144,7 @@ li{
 
 
 
-/* .separator{
-    width: 40px;
-    height: 1px;
-    margin-top: 15px;
-    margin-bottom:15px;
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
-    background-color: #999999;
-} */
+
 
 
 
@@ -182,9 +173,9 @@ li{
 
 
 .projet:hover{ /* permet de mettre une ombre quand on passe souris sur projet */
-    box-shadow: 0 14px 28px; /*rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+    box-shadow: 0 14px 28px; 
     color:red;
-    transition:0.5s /* 0.5 sec après la souris est passé affiche lombre */
+    transition:0.5s 
 }
 .projet img { /* On vise ici les img au sein du projet et leur mettre une hauteur ainsi qu'une largeur max*/
     min-width: 400px;
@@ -282,52 +273,4 @@ li{
     }
     
 }
-
-/* width: px ou % -> largeur
-height: px ou % -> hauteur */
-
-/* marge interne : padding, padding-right/left/top/bottom
-marge externe : margin, margin-right/left/top/bottom  */
-
-/* 
-Positionnement Relatif -> décaler l'élement par rapport à sa position de base -> position:relative
-Absolu -> décaler à n'importer quel endroit -> position: absolute
-Fixe -> a un endroit fixe tout le temps -> position: fixed
-*/
-
-/* position texte 
-overflow : hidden (cache le texte en trop)
-overflow : visible (affiche le texte même si dépasse)
-overflow: scroll (met barre de défilement)
-overflow : auto (automatique)
-
-propriété additionelle : 
-word-wrap: break-word => respecte les largeurs des box
-
-rajouter du contenu: 
-on utilise content pour définir un contenu
-pour faire contenu avant :
-
-transformer le texte en majuscule :
-text-transform: uppercase(majuscule), lowercase (minuscule), initial (premiere lettre maj et reste minuscule
-
-/* Commandes flexbox 
-#conteneur { 
-    display:flex
-    flex-direction: colum / colum-reverse (met les elements en colonnes)
-    flex-wrap: no-wrap / wrap / wrap-reverse (retour à la ligne ou non, a l'envers)
-    justify-content : flex-start (par défaut), flex-end (a la fin), center(au centre), space-between(espace entre), space-around(espace entre chaque coin de bloc)
-    height 700px; ( a mettre avant pour utiliser align en dessous)
-    align-items:center (met les elements au centre) / align-self: flex-end/start / stretch / baseline / center
-
-.element{
-    width: 400px;
-    height: 200px;
-
-.element:nth-child() -> permet de selectionner un element specifique pour le faire bouger
-ex :
-.projet:nth-child(3){
-    align-items: center -> on va aligner le projet n°3 au centre
-}
-*/
 
